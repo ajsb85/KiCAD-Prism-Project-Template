@@ -1,0 +1,15 @@
+{
+  "project_name": "KiCAD Prism Project Template",
+  "description": "Professional template with full workflow support and documentation.",
+  "portfolio": {
+    "summary": "Gold standard repository structure.",
+    "tags": ["Template", "KiCAD-CLI"],
+    "featured": true,
+    "modelPath": "Design-Outputs/3DModel/StickHub.glb",
+    "thumbnailPath": "assets/thumbnail/render.svg"
+  },
+  "paths": {
+    "documentation": "docs",
+    "jobset": "Outputs.kicad_jobset"
+  }
+}

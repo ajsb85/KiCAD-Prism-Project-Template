@@ -1,0 +1,61 @@
+{
+  "jobs": [
+    {
+      "id": "design_pdf",
+      "type": "sch_export_plot_pdf",
+      "settings": {
+        "output_dir": "./Design-Outputs/",
+        "plot_all": true
+      }
+    },
+    {
+      "id": "mfg_gerbers",
+      "type": "pcb_export_gerbers",
+      "settings": {
+        "output_filename": "./Manufacturing-Outputs/Gerbers/"
+      }
+    },
+    {
+      "id": "render_glb",
+      "type": "pcb_export_glb",
+      "settings": {
+        "output_filename": "./Design-Outputs/3DModel/StickHub.glb"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "28dab1d3-7bf2-4d8a-9723-bcdd14e1d814",
+      "description": "Design-Outputs",
+      "type": "folder",
+      "only": [
+        "design_pdf"
+      ],
+      "settings": {
+        "output_path": "./Design-Outputs"
+      }
+    },
+    {
+      "id": "9e5c254b-cb26-4a49-beea-fa7af8a62903",
+      "description": "Manufacturing-Outputs",
+      "type": "folder",
+      "only": [
+        "mfg_gerbers"
+      ],
+      "settings": {
+        "output_path": "./Manufacturing-Outputs"
+      }
+    },
+    {
+      "id": "81c80ad4-e8b9-4c9a-8bed-df7864fdefc6",
+      "description": "Renders",
+      "type": "folder",
+      "only": [
+        "render_glb"
+      ],
+      "settings": {
+        "output_path": "./assets/renders"
+      }
+    }
+  ]
+}
